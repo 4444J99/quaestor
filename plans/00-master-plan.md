@@ -6,8 +6,10 @@
 No grant APIs have been queried and no accounts created. This plan is the blueprint the
 tasked adapter-agents build against.
 
-> ⚠️ **Name not confirmed.** Anthony called this "the MPO"; its meaning is unknown and was
-> not assumed. Working name **quaestor**. See `surfaces/decisions.html` (QS-009).
+> ✅ **"MPO" resolved (2026-06-25):** = NPO / "Non-Profit Organization" — Anthony's spoken
+> term, apposed to "the non-profit"; found in zero written text. The nonprofit = Cind & Sol;
+> **quaestor** = its money-finding engine. Name kept. This repo owns the concept. Reversible
+> via `surfaces/decisions.html` (QS-009).
 
 ---
 

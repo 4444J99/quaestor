@@ -12,7 +12,7 @@
     { "id": "QS-006", "title": "Human-review gate + submission plan", "owner": "arbiter", "type": "plan", "status": "done" },
     { "id": "QS-007", "title": "In-formation landing + decisions surface", "owner": "faber-liminis", "type": "landing", "status": "done" },
     { "id": "QS-008", "title": "Wire organ into the live limen daemon heartbeat", "owner": "vigil", "type": "governance", "status": "ready", "issue": 2 },
-    { "id": "QS-009", "title": "DECISION: confirm what 'MPO' means + keep name quaestor or rename", "owner": "arbiter", "type": "governance", "status": "human-hand", "issue": 4 },
+    { "id": "QS-009", "title": "RESOLVED: 'MPO' = NPO / Non-Profit Organization (spoken, apposed to 'the non-profit'); quaestor kept as the grant-engine serving Cind & Sol; this repo owns the concept", "owner": "arbiter", "type": "governance", "status": "done", "issue": 4, "note": "Resolved 2026-06-25 by forensic search — 'MPO' in zero written text, only the one voice mandate apposed to 'the non-profit'. Reversible: reopen issue #4 if the letters were different." },
     { "id": "QS-010", "title": "Build read-only grant-discovery source adapters", "owner": "explorator", "type": "adapter", "status": "ready", "issue": 3, "note": "no APIs queried / accounts created yet — this issue does that work" },
     { "id": "QS-011", "title": "DECISION: fund Cind & Sol first vs. fleet first", "owner": "arbiter", "type": "governance", "status": "human-hand", "issue": 5 },
     { "id": "QS-012", "title": "DECISION: aggressiveness — high-fit only vs. wide net", "owner": "arbiter", "type": "governance", "status": "human-hand", "issue": 6 },

@@ -1,7 +1,8 @@
 {
   "organ": "quaestor",
-  "working_name": "quaestor",
-  "unconfirmed_name": "MPO — Anthony's term; meaning unknown, NOT assumed. See surfaces/decisions.html and QS-009.",
+  "name": "quaestor",
+  "owns": "the MPO / grant-machine concept — system-of-record (any session: this repo owns it)",
+  "mpo_resolution": "MPO = NPO / 'Non-Profit Organization' — Anthony's spoken term, apposed to 'the non-profit' in his 2026-06-25 voice mandate; appears in ZERO written text (his or Maddie's). The nonprofit = organvm-vi-koinonia/cind-and-sol-foundation; quaestor = its money-finding ENGINE. Name 'quaestor' KEPT (accurate for a grant/treasury organ). Resolved 2026-06-25. Reversible via QS-009 / surfaces/decisions.html.",
   "kind": "autopoietic-lifeform",
   "home": "organvm-iii-ergon",
   "ergon": "work / labor — the organ of doing",

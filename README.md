@@ -13,10 +13,19 @@ wider fleet second. It is **external money**: grants and funders out in the worl
 (`organvm/the-invisible-ledger`, the limen revenue-backlog organ) — those mine *product*
 revenue; quaestor finds *grant* revenue.
 
-> ⚠️ **Name not yet confirmed.** Anthony called this "**the MPO**." I do not know what that
-> stands for, so I did **not** assume. The working name is **quaestor**. A decision card
-> (`surfaces/decisions.html`) asks him to confirm what "MPO" means and whether to keep
-> `quaestor` or rename. **Until he answers, treat the name as provisional.**
+> ✅ **What "MPO" means — resolved 2026-06-25.** Anthony called this "**the MPO**" once, in a
+> voice-dictated mandate: *"The non-profit, the MPO, right? I want the MPO, which is similar
+> to the grant machine that I want built."* Forensic search found **"MPO" in zero text he or
+> Maddie ever wrote** — it exists only as that one spoken word, **apposed directly to "the
+> non-profit."** Reading: **MPO = NPO — "Non-Profit Organization"** (the single most common
+> speech-to-text swap, N→M). He was naming the nonprofit and saying its engine is the
+> grant-machine ("these are probably very similar" — a nonprofit's engine *is* its grant
+> funding). So: the **nonprofit = Cind & Sol** (`organvm-vi-koinonia/cind-and-sol-foundation`);
+> its autopoietic **money-finding engine = quaestor** (this repo). The name **`quaestor` is
+> kept** — accurate for a treasury/grant-finding organ; "MPO/NPO" names the *nonprofit it
+> serves*, not the engine. **This repo is the system-of-record owner of the MPO / grant-machine
+> concept.** Reversible: if the letters were something else, see `surfaces/decisions.html` /
+> issue QS-009.
 
 ---
 
