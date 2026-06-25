@@ -1,0 +1,41 @@
+{
+  "organ": "quaestor",
+  "working_name": "quaestor",
+  "unconfirmed_name": "MPO — Anthony's term; meaning unknown, NOT assumed. See surfaces/decisions.html and QS-009.",
+  "kind": "autopoietic-lifeform",
+  "home": "organvm-iii-ergon",
+  "ergon": "work / labor — the organ of doing",
+  "purpose": "Continuously discover EXTERNAL funding (foundation, government, international grants), match eligibility, draft applications, track deadlines, and SURFACE each for a human to submit. Feeds the Cind & Sol Foundation first, the fleet second.",
+  "complements_not_duplicates": {
+    "the-invisible-ledger": "organvm/the-invisible-ledger — internal PRODUCT-revenue machinery",
+    "revenue-backlog": "limen revenue-backlog organ — internal idle-capacity revenue work",
+    "quaestor_lane": "EXTERNAL/grant money — distinct from the two above"
+  },
+  "pipeline": ["discover", "match-eligibility", "draft", "human-review", "submit (human-hand)", "track"],
+  "lifecycle": {
+    "past": "metabolize — fold new grant atoms, eligibility reads, and outcomes into the registry each beat",
+    "present": "run — keep the draft queue, deadline tracker, and surfaces coherent and current",
+    "future": "evolve — widen sources and improve fit-scoring when the queue goes dry; ask less of the human over time"
+  },
+  "owned_by": "tasked organ-agents (see governance/ROLES.md) — NOT the interactive session",
+  "human_hands": [
+    "submitting ANY grant application — surfaced, never auto-executed (mandatory review gate before submit)",
+    "moving or receiving ANY money — the organ never touches funds, accounts, or payment rails",
+    "publish decisions (make landing public) — surfaced, never auto-executed"
+  ],
+  "not_authoritative": "Nothing this organ produces is financial, tax, or legal advice. Every eligibility/structuring note is marked 'confirm with a nonprofit attorney / grant professional'.",
+  "heartbeat": {
+    "status": "declared — not yet wired to the live limen daemon",
+    "metabolize": "governance/registry.json",
+    "loop": "plans/60-autopoietic-loop.md",
+    "wire_issue": "see GitHub issue: 'wire organ to live limen heartbeat' (QS-008)"
+  },
+  "siblings": {
+    "cind-and-sol-foundation": "organvm-vi-koinonia/cind-and-sol-foundation — the first beneficiary (501c3 formation gates much eligibility, see CS-004)",
+    "collaboratory": "sibling organ",
+    "palimpsest": "sibling organ",
+    "internal_revenue_organs": ["organvm/the-invisible-ledger", "limen revenue-backlog organ"]
+  },
+  "created": "2026-06-25",
+  "stewards": ["Anthony (4jp)", "the limen fleet"]
+}

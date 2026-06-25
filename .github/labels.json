@@ -1,0 +1,19 @@
+[
+  { "name": "owner:quaestor", "color": "1d76db", "description": "Treasury steward (vision/master plan)" },
+  { "name": "owner:explorator", "color": "0e8a16", "description": "Scout (discovery sources + adapters)" },
+  { "name": "owner:iudex", "color": "fbca04", "description": "Eligibility judge (matching/fit)" },
+  { "name": "owner:scriba", "color": "5319e7", "description": "Scribe (drafting)" },
+  { "name": "owner:arbiter", "color": "d4c5f9", "description": "Keeper of choices + review gate" },
+  { "name": "owner:faber-liminis", "color": "c5def5", "description": "Door-builder (landing)" },
+  { "name": "owner:tabularius", "color": "c2e0c6", "description": "Registrar (ledger/tracking)" },
+  { "name": "owner:vigil", "color": "d93f0b", "description": "Heartbeat (daemon wiring)" },
+  { "name": "type:plan", "color": "bfdadc", "description": "Planning artifact" },
+  { "name": "type:adapter", "color": "bcf5db", "description": "Read-only discovery adapter" },
+  { "name": "type:pipeline", "color": "fef2c0", "description": "Pipeline stage logic" },
+  { "name": "type:surface", "color": "f9d0c4", "description": "Client-facing surface" },
+  { "name": "type:landing", "color": "d4c5f9", "description": "In-formation landing" },
+  { "name": "type:governance", "color": "c2e0c6", "description": "Governance / infra" },
+  { "name": "status:ready", "color": "0e8a16", "description": "Ready for an agent to pick up" },
+  { "name": "status:blocked", "color": "b60205", "description": "Blocked on info or upstream" },
+  { "name": "status:human-hand", "color": "000000", "description": "Needs a human — surfaced, never auto-executed" }
+]

@@ -1,0 +1,25 @@
+{
+  "organ": "quaestor",
+  "updated": "2026-06-25",
+  "discussion": "pending — founding discussion to be created; URL folded back here",
+  "note": "Live ledger. Each item has a standing owner role + status. Mirrored to GitHub issues (issue # folded back on creation); status:human-hand items also live on surfaces/decisions.html. SUBMIT and MONEY are permanent human-hand gates, never reaped.",
+  "items": [
+    { "id": "QS-001", "title": "README: vision, money-finding organ, the human-hand line", "owner": "quaestor", "type": "plan", "status": "done" },
+    { "id": "QS-002", "title": "Master plan + pipeline stage plans (discover/match/draft/review/track/loop)", "owner": "quaestor", "type": "plan", "status": "done" },
+    { "id": "QS-003", "title": "Discovery sources map: Grants.gov, Candid/FDO, ProPublica 990, Instrumentl, NIH/NSF, intl/Panama", "owner": "explorator", "type": "plan", "status": "done" },
+    { "id": "QS-004", "title": "Eligibility matching + fit-scoring plan", "owner": "iudex", "type": "plan", "status": "done" },
+    { "id": "QS-005", "title": "Application drafting plan (queue, never auto-sent)", "owner": "scriba", "type": "plan", "status": "done" },
+    { "id": "QS-006", "title": "Human-review gate + submission plan", "owner": "arbiter", "type": "plan", "status": "done" },
+    { "id": "QS-007", "title": "In-formation landing + decisions surface", "owner": "faber-liminis", "type": "landing", "status": "done" },
+    { "id": "QS-008", "title": "Wire organ into the live limen daemon heartbeat", "owner": "vigil", "type": "governance", "status": "ready" },
+    { "id": "QS-009", "title": "DECISION: confirm what 'MPO' means + keep name quaestor or rename", "owner": "arbiter", "type": "governance", "status": "human-hand" },
+    { "id": "QS-010", "title": "Build read-only grant-discovery source adapters", "owner": "explorator", "type": "adapter", "status": "ready", "note": "no APIs queried / accounts created yet — this issue does that work" },
+    { "id": "QS-011", "title": "DECISION: fund Cind & Sol first vs. fleet first", "owner": "arbiter", "type": "governance", "status": "human-hand" },
+    { "id": "QS-012", "title": "DECISION: aggressiveness — high-fit only vs. wide net", "owner": "arbiter", "type": "governance", "status": "human-hand" },
+    { "id": "QS-013", "title": "DECISION: human-review gate before any submission (recommend always-on)", "owner": "arbiter", "type": "governance", "status": "human-hand" },
+    { "id": "QS-014", "title": "DECISION: publish the landing publicly?", "owner": "arbiter", "type": "governance", "status": "human-hand" },
+    { "id": "QS-015", "title": "HUMAN HAND (permanent gate): submitting any grant application", "owner": "arbiter", "type": "governance", "status": "human-hand", "note": "permanent — never reaped; the organ drafts + surfaces only" },
+    { "id": "QS-016", "title": "HUMAN HAND (permanent gate): any money movement / receipt", "owner": "quaestor", "type": "governance", "status": "human-hand", "note": "permanent — never reaped; the organ never touches funds" },
+    { "id": "QS-017", "title": "Eligibility blocked until 501(c)(3) exists (ties to Cind & Sol CS-004)", "owner": "iudex", "type": "governance", "status": "blocked", "note": "many US grants require an established 501(c)(3); blocked on Cind & Sol formation" }
+  ]
+}
