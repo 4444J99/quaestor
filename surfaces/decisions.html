@@ -1,0 +1,207 @@
+<!-- Owned by: arbiter (keeper of choices). Authored 2026-06-25. In formation — not for public release. Self-contained: no external scripts/fonts/CDNs. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>quaestor — Decisions</title>
+<style>
+  :root{
+    --bg:#0a0a12;
+    --ink:#e9e7f2;
+    --ink-soft:#b8b4cf;
+    --ink-dim:#8a86a6;
+    --line:rgba(255,255,255,.08);
+    --serif:Georgia,'Times New Roman',serif;
+    --type:ui-monospace,'SF Mono',Menlo,Monaco,'Cascadia Code',monospace;
+    --c-root:#e0506a;
+    --c-sacral:#f0894d;
+    --c-solar:#f2cf63;
+    --c-heart:#79c98a;
+    --c-throat:#5aa9e6;
+    --c-third:#6f6fd6;
+    --c-crown:#a779d6;
+    --gold:#e7c46a;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+
+  .sky{position:fixed;inset:0;z-index:-2;
+    background:
+      radial-gradient(1100px 700px at 14% -10%, rgba(231,196,106,.12), transparent 60%),
+      radial-gradient(1000px 800px at 90% 6%, rgba(111,111,214,.15), transparent 60%),
+      radial-gradient(1000px 900px at 50% 110%, rgba(167,121,214,.10), transparent 60%),
+      linear-gradient(180deg,#0a0a12,#0b0b16 50%,#0a0a12);}
+  .sky::after{content:"";position:absolute;inset:-20%;
+    background:radial-gradient(640px 360px at 70% 30%, rgba(90,169,230,.08), transparent 70%);
+    filter:blur(8px);animation:drift 28s ease-in-out infinite alternate;}
+  @keyframes drift{from{transform:translate3d(-1%,-1%,0) scale(1.02);}to{transform:translate3d(2%,1%,0) scale(1.05);}}
+  @media (prefers-reduced-motion:reduce){.sky::after{animation:none;}}
+
+  .spine{position:fixed;top:0;bottom:0;left:max(18px,calc(50vw - 480px));width:3px;z-index:0;
+    background:linear-gradient(180deg,var(--c-root) 0%,var(--c-sacral) 16%,var(--c-solar) 33%,var(--c-heart) 50%,var(--c-throat) 66%,var(--c-third) 83%,var(--c-crown) 100%);
+    opacity:.5;border-radius:2px;box-shadow:0 0 18px rgba(167,121,214,.22);}
+  @media (max-width:920px){.spine{left:0;opacity:.65;}}
+
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px;position:relative;}
+  .type{font-family:var(--type);letter-spacing:.26em;text-transform:uppercase;font-size:.66rem;color:var(--ink-dim);}
+
+  header.head{padding:92px 0 36px;}
+  h1{font-weight:400;font-size:clamp(2.1rem,6vw,3.3rem);margin:.2em 0 .3em;line-height:1.15;
+    background:linear-gradient(120deg,#fff,#e7c46a 45%,#a779d6);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  header.head .sub{color:var(--ink-soft);font-size:clamp(1.05rem,2.4vw,1.25rem);max-width:58ch;margin:0;}
+  .bar{height:3px;width:100%;border-radius:3px;margin:30px 0 8px;opacity:.7;
+    background:linear-gradient(90deg,var(--c-root),var(--c-sacral),var(--c-solar),var(--c-heart),var(--c-throat),var(--c-third),var(--c-crown));}
+
+  .board{padding:18px 0 40px;display:flex;flex-direction:column;gap:22px;}
+  .decision{border:1px solid var(--line);border-radius:18px;padding:26px 24px 24px;
+    background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.006));position:relative;overflow:hidden;}
+  .decision::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent,var(--c-throat));opacity:.85;}
+  .decision .num{font-family:var(--type);letter-spacing:.18em;font-size:.66rem;color:var(--ink-dim);text-transform:uppercase;}
+  .decision h2{font-weight:400;font-size:1.45rem;margin:.25em 0 .2em;line-height:1.25;}
+  .decision .why{color:var(--ink-soft);font-size:.98rem;margin:0 0 18px;}
+  .decision .why b{color:var(--ink);font-weight:400;font-style:italic;}
+
+  .options{display:flex;flex-wrap:wrap;gap:11px;}
+  a.opt{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);
+    font-family:var(--type);font-size:.82rem;letter-spacing:.02em;border:1px solid var(--line);border-radius:999px;
+    padding:10px 16px;background:rgba(255,255,255,.02);transition:border-color .25s ease,background .25s ease,transform .25s ease;}
+  a.opt:hover{border-color:rgba(231,196,106,.55);background:linear-gradient(180deg,rgba(231,196,106,.12),rgba(90,169,230,.05));transform:translateY(-2px);}
+  a.opt .rec{font-family:var(--type);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#0a0a12;
+    background:linear-gradient(90deg,var(--gold),var(--c-throat));padding:3px 8px;border-radius:999px;font-weight:600;}
+
+  footer{padding:30px 0 80px;color:var(--ink-dim);font-size:.85rem;}
+  footer .fbar{height:3px;width:100%;border-radius:3px;margin-bottom:20px;opacity:.6;
+    background:linear-gradient(90deg,var(--c-root),var(--c-sacral),var(--c-solar),var(--c-heart),var(--c-throat),var(--c-third),var(--c-crown));}
+  footer a{color:var(--ink-soft);}
+</style>
+</head>
+<body>
+
+<div class="sky"></div>
+<div class="spine" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <header class="head">
+    <div class="type">quaestor · the money-finding organ · in formation</div>
+    <h1>quaestor — Decisions</h1>
+    <p class="sub">Every open choice, with options and a clear next step. Pick one and it opens a pre-filled note. Nothing here moves money or submits anything.</p>
+    <div class="bar" aria-hidden="true"></div>
+  </header>
+
+  <main class="board" id="board"><!-- decisions injected here --></main>
+
+  <footer>
+    <div class="fbar" aria-hidden="true"></div>
+    quaestor · in formation · 2026 &middot;
+    choices route to <a href="mailto:padavano.anthony@gmail.com">padavano.anthony@gmail.com</a>.
+    Nothing here moves money or submits an application — these are expressions of intent only.
+  </footer>
+
+</div>
+
+<script>
+  var CHAKRA = ['var(--gold)','var(--c-sacral)','var(--c-heart)','var(--c-throat)','var(--c-third)','var(--c-crown)'];
+
+  var DECISIONS = [
+    {
+      title: "What does 'MPO' mean — and keep the name 'quaestor' or rename?",
+      why: "You called this 'the MPO'. I do not know what that stands for, so I did NOT assume. I'm running under the working name 'quaestor' (Roman treasury officer). Tell me what MPO means so the name can be right before anything is built on it.",
+      options: [
+        { label: "Keep 'quaestor'", rec: true },
+        { label: "Rename to 'MPO' (I'll tell you the meaning)" },
+        { label: "Different name (describe)" }
+      ]
+    },
+    {
+      title: "Who does it fund first — Cind & Sol, or the fleet?",
+      why: "quaestor finds external grant money. The order it serves shapes which funders it hunts first. Cind & Sol is the clearest grant-eligible mission once it forms.",
+      options: [
+        { label: "Cind & Sol Foundation first", rec: true },
+        { label: "The wider fleet first" },
+        { label: "Balance both" }
+      ]
+    },
+    {
+      title: "How aggressive — high-fit only, or wide net?",
+      why: "A wide net surfaces more opportunities but more noise, more review time, and risk of off-target asks that sour funders. High-fit-only means fewer, stronger applications.",
+      options: [
+        { label: "High-fit only", rec: true },
+        { label: "Wide net" },
+        { label: "Wide to discover, narrow to draft" }
+      ]
+    },
+    {
+      title: "Human-review gate before ANY submission — confirm always-on?",
+      why: "My recommendation is a mandatory human review before every submission, with no auto-submit ever. Submitting and moving money are always human hand. Please confirm this stays always-on.",
+      options: [
+        { label: "Yes — always-on, no exceptions", rec: true },
+        { label: "Allow auto-submit for some (discuss)" }
+      ]
+    },
+    {
+      title: "Publish the in-formation landing?",
+      why: "The landing (site/index.html) is built and noindexed. The only question is who sees it, and when. It is the form/lure; the operation stays private regardless.",
+      options: [
+        { label: "Keep it private for now", rec: true },
+        { label: "Publish the landing publicly" },
+        { label: "Publish + custom domain" }
+      ]
+    }
+  ];
+
+  function mailto(title, option){
+    var subject = "quaestor decision: " + title;
+    var body = "My choice: " + option;
+    return "mailto:padavano.anthony@gmail.com"
+      + "?subject=" + encodeURIComponent(subject)
+      + "&body=" + encodeURIComponent(body);
+  }
+
+  var board = document.getElementById('board');
+  DECISIONS.forEach(function(d, i){
+    var accent = CHAKRA[i % CHAKRA.length];
+    var card = document.createElement('section');
+    card.className = 'decision';
+    card.style.setProperty('--accent', accent);
+
+    var num = document.createElement('div');
+    num.className = 'num';
+    num.textContent = 'Decision ' + (i + 1).toString().padStart(2, '0');
+
+    var h2 = document.createElement('h2');
+    h2.textContent = d.title;
+
+    var why = document.createElement('p');
+    why.className = 'why';
+    why.textContent = d.why;
+
+    var opts = document.createElement('div');
+    opts.className = 'options';
+    d.options.forEach(function(o){
+      var a = document.createElement('a');
+      a.className = 'opt';
+      a.href = mailto(d.title, o.label);
+      a.appendChild(document.createTextNode(o.label));
+      if(o.rec){
+        var tag = document.createElement('span');
+        tag.className = 'rec';
+        tag.textContent = 'recommended';
+        a.appendChild(tag);
+      }
+      opts.appendChild(a);
+    });
+
+    card.appendChild(num);
+    card.appendChild(h2);
+    card.appendChild(why);
+    card.appendChild(opts);
+    board.appendChild(card);
+  });
+</script>
+
+</body>
+</html>
