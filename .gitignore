@@ -1,0 +1,15 @@
+# quaestor — money-finding organ
+# No secrets, no scraped data, no draft applications committed.
+.env
+.env.*
+*.key
+*.pem
+secrets/
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+# runtime data the organ will produce later (grant atoms, drafts) — never committed
+data/
+drafts/
+atoms/
