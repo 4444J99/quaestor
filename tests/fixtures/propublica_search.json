@@ -1,0 +1,29 @@
+{
+  "total_results": 2,
+  "num_pages": 1,
+  "cur_page": 0,
+  "organizations": [
+    {
+      "ein": 133433452,
+      "name": "Robin Hood Foundation",
+      "sub_name": "",
+      "city": "New York",
+      "state": "NY",
+      "ntee_code": "P20",
+      "raw_ntee_code": "P20",
+      "subseccd": 3,
+      "score": 42.1
+    },
+    {
+      "ein": 941156316,
+      "name": "The California Wellness Foundation",
+      "sub_name": "",
+      "city": "Los Angeles",
+      "state": "CA",
+      "ntee_code": "E70",
+      "raw_ntee_code": "E70",
+      "subseccd": 3,
+      "score": 39.4
+    }
+  ]
+}

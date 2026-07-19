@@ -1,0 +1,30 @@
+{
+  "data": {
+    "searchParams": {"keyword": "mental health", "oppStatuses": "forecasted|posted"},
+    "hitCount": 2,
+    "oppHits": [
+      {
+        "id": "358126",
+        "number": "SM-24-001",
+        "title": "Community Mental Health Services Block Grant",
+        "agencyCode": "HHS-SAMHSA",
+        "agency": "Substance Abuse and Mental Health Services Administration",
+        "openDate": "06/01/2024",
+        "closeDate": "08/15/2024",
+        "oppStatus": "posted",
+        "docType": "synopsis"
+      },
+      {
+        "id": "349900",
+        "number": "IAF-24-COMMUNITY",
+        "title": "Grassroots Development Program (Latin America)",
+        "agencyCode": "IAF",
+        "agency": "Inter-American Foundation",
+        "openDate": "05/01/2024",
+        "closeDate": "",
+        "oppStatus": "forecasted",
+        "docType": "forecast"
+      }
+    ]
+  }
+}

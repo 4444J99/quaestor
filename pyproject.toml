@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quaestor-discover"
+version = "0.1.0"
+description = "quaestor QS-010 — read-only grant-discovery source adapters (free sources first)"
+requires-python = ">=3.11"
+# Deliberately zero runtime dependencies: adapters use only the standard library
+# (urllib) so the organ can poll free sources with no install footprint and no
+# third-party supply-chain surface. Secrets are never required for free sources.
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+quaestor-discover = "discover.cli:main"
+
+[tool.setuptools]
+packages = ["discover", "discover.sources"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
