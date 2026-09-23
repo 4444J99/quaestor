@@ -1,7 +1,8 @@
 from unittest.mock import patch
-import pytest
 
+import pytest
 from conftest import load_fixture
+
 from discover.runner import DiscoveryRunner
 
 
@@ -101,6 +102,8 @@ def test_store_read_failure_raises(tmp_path):
     def mock_read_text(*args, **kwargs):
         raise PermissionError("Permission denied")
 
-    with patch.object(type(store_file), "read_text", side_effect=mock_read_text):
-        with pytest.raises(PermissionError, match="Permission denied"):
-            r._load_seen_ids()
+    with (
+        patch.object(type(store_file), "read_text", side_effect=mock_read_text),
+        pytest.raises(PermissionError, match="Permission denied"),
+    ):
+        r._load_seen_ids()

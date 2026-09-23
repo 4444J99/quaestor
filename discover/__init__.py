@@ -14,6 +14,6 @@ Hard rules (enforced here):
 """
 
 from .atom import GrantAtom
-from .runner import DiscoveryRunner, FREE_SOURCES
+from .runner import FREE_SOURCES, DiscoveryRunner
 
-__all__ = ["GrantAtom", "DiscoveryRunner", "FREE_SOURCES"]
+__all__ = ["FREE_SOURCES", "DiscoveryRunner", "GrantAtom"]
