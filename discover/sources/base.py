@@ -12,8 +12,7 @@ import abc
 import json
 import urllib.error
 import urllib.request
-from collections.abc import Callable
-from typing import Any, Protocol
+from typing import Any, Callable, Protocol
 
 from ..atom import GrantAtom
 
@@ -59,7 +58,7 @@ def default_fetch(
         hdrs["Content-Type"] = "application/json"
     req = urllib.request.Request(url, data=data, headers=hdrs, method="POST" if data else "GET")
     try:
-        with urllib.request.urlopen(req, timeout=DEFAULT_TIMEOUT) as resp:
+        with urllib.request.urlopen(req, timeout=DEFAULT_TIMEOUT) as resp:  # noqa: S310 (fixed https hosts)
             raw = resp.read().decode("utf-8")
     except (urllib.error.URLError, TimeoutError, OSError) as exc:  # pragma: no cover - network
         raise HttpError(f"fetch failed for {url}: {exc}") from exc
