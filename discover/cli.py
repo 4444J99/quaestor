@@ -10,7 +10,7 @@ import argparse
 import json
 import sys
 
-from .runner import DiscoveryRunner, FREE_SOURCES
+from .runner import FREE_SOURCES, DiscoveryRunner
 
 
 def build_parser() -> argparse.ArgumentParser:
