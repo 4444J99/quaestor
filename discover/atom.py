@@ -60,7 +60,7 @@ class GrantAtom:
         }
 
     @classmethod
-    def from_dict(cls, d: dict[str, Any]) -> "GrantAtom":
+    def from_dict(cls, d: dict[str, Any]) -> GrantAtom:
         amount = d.get("amount") or {}
         return cls(
             id=d["id"],

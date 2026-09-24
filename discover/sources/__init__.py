@@ -4,4 +4,4 @@ from .base import HttpError, PaidSourceGated, Source, default_fetch
 from .grants_gov import GrantsGov
 from .propublica import ProPublica
 
-__all__ = ["Source", "GrantsGov", "ProPublica", "PaidSourceGated", "HttpError", "default_fetch"]
+__all__ = ["GrantsGov", "HttpError", "PaidSourceGated", "ProPublica", "Source", "default_fetch"]
