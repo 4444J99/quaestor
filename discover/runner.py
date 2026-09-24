@@ -58,9 +58,14 @@ class DiscoveryRunner:
             if not line:
                 continue
             try:
-                seen.add(json.loads(line)["id"])
-            except (json.JSONDecodeError, KeyError):
+                record = json.loads(line)
+            except json.JSONDecodeError:
                 continue
+            if not isinstance(record, dict):
+                continue
+            record_id = record.get("id")
+            if isinstance(record_id, str) and record_id:
+                seen.add(record_id)
         return seen
 
     def _append(self, atoms: list[GrantAtom]) -> None:
